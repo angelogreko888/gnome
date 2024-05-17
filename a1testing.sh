@@ -13,6 +13,3 @@ deb-src http://deb.debian.org/debian-security/ bookworm-security main contrib no
 
 apt update
 
-apt dist-upgrade -y
-
-apt autoremove -y

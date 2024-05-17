@@ -20,6 +20,3 @@ deb-src http://deb.debian.org/debian bookworm-backports main contrib non-free no
 
 apt update
 
-apt dist-upgrade -y
-
-apt autoremove -y

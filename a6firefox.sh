@@ -12,4 +12,4 @@ echo '
           Pin-Priority: 1000
           ' | tee /etc/apt/preferences.d/mozilla
 
-apt update && apt install firefox
+apt update && apt install firefox -y
