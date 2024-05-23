@@ -1,7 +1,7 @@
-#!/bin/bash/
+#!/bin/bash
 
-apt update
+sudo apt update
 
-apt dist-upgrade -y
+sudo apt dist-upgrade -y
 
-apt autoremove -y
+sudo apt autoremove -y

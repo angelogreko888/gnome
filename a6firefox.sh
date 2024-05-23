@@ -1,6 +1,6 @@
 #!/bin/bash
 
-install -d -m 0755 /etc/apt/keyrings
+sudo install -d -m 0755 /etc/apt/keyrings
 
 wget -q https://packages.mozilla.org/apt/repo-signing-key.gpg -O- | tee /etc/apt/keyrings/packages.mozilla.org.asc > /dev/null
 
@@ -12,4 +12,4 @@ echo '
           Pin-Priority: 1000
           ' | tee /etc/apt/preferences.d/mozilla
 
-apt update && apt install firefox -y
+sudo apt update && sudo apt install firefox -y
