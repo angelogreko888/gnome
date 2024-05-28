@@ -1,15 +1,14 @@
 #!/bin/bash
 
-mkdir ~/github/
 
-cd ~/github/
+cd /home/vago/git/
 
 git clone https://github.com/simeononsecurity/FireFox-Privacy-Script
 
-cp FireFox-Privacy-Script/Files/distribution/policies.json FireFox-Privacy-Script/Files/distribution/policiescopy.json
+cp /home/vago/git/FireFox-Privacy-Script/Files/distribution/policies.json /home/vago/git/FireFox-Privacy-Script/Files/distribution/policiescopy.json
 
-sed -i 's/"DisableFirefoxAccounts": true/"DisableFirefoxAccounts": false/' FireFox-Privacy-Script/Files/distribution/policies.json
+sed -i 's/"DisableFirefoxAccounts": true/"DisableFirefoxAccounts": false/' /home/vago/git/FireFox-Privacy-Script/Files/distribution/policies.json
 
-sudo chmod +x FireFox-Privacy-Script/sos-firefoxprivacy.sh
+sudo chmod +x /home/vago/git/FireFox-Privacy-Script/sos-firefoxprivacy.sh
 
-sudo bash FireFox-Privacy-Script/sos-firefoxprivacy.sh
+sudo bash /home/vago/git/FireFox-Privacy-Script/sos-firefoxprivacy.sh

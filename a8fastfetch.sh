@@ -1,8 +1,8 @@
 #!/bin/bash
 
-mkdir -p ~/github/fastfetch/
+mkdir -p /home/vago/git/fastfetch/
 
-cd ~/github/fastfetch/
+cd /home/vago/git/fastfetch/
 
 wget https://github.com/fastfetch-cli/fastfetch/releases/download/2.12.0/fastfetch-linux-amd64.deb
 

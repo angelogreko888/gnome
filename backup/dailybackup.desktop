@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=DialyBackup
-GenericName=DailyBackup
-Comment=Home Dir Backup
-Exec=~/bin/daily-backup.sh
-Terminal=false
-Type=Application
-X-GNOME-Autostart-enabled=true

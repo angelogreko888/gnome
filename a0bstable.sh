@@ -17,3 +17,5 @@ sudo bash ./a6firefox.sh
 sudo bash ./a7privacy.sh
 
 sudo bash ./a8fastfetch.sh
+
+sudo bash ./a9virtualbox

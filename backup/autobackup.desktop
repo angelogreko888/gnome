@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=Auto Backup
-Type=Application
-Exec=full-backup.sh 
-Icon=bazaar.png
-Terminal=false
