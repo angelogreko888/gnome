@@ -16,5 +16,5 @@ flatpak install io.freetubeapp.FreeTube -y
 
 flatpak install com.anydesk.Anydesk -y
 
-
+flatpak install com.usebottles.bottles -y
 

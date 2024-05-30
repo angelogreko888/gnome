@@ -6,9 +6,11 @@ sudo apt install gnome-shell -y
 
 sudo apt install gnome-session -y
 
+xdg-user-dirs-update
+
 sudo apt install $apps -y
 
-xdg-user-dirs-update
+sudo apt --fix-broken install
 
 sudo apt purge yelp yelp-tools -y
 
