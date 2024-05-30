@@ -11,4 +11,6 @@ sed -i 's/"DisableFirefoxAccounts": true/"DisableFirefoxAccounts": false/' /home
 
 sudo chmod +x /home/vago/git/FireFox-Privacy-Script/sos-firefoxprivacy.sh
 
+cd /home/vago/git/FireFox-Privacy-Script
+
 sudo bash /home/vago/git/FireFox-Privacy-Script/sos-firefoxprivacy.sh
