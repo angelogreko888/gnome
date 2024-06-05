@@ -22,7 +22,7 @@ echo "
 ####
 
 echo "
-PS1='\[\033[1;36m\]\u\[\033[1;31m\]@\[\033[1;32m\]\h:\[\033[1;35m\]\w\[\033[1;31m\]\$\[\033[0m\] '
+PS1='\[\033[1;36m\]\u\[\033[1;31m\]@\[\033[1;32m\]\h: \[\033[1;31m\]\w\[\033[1;33m\]\$\[\033[0m\] '
 " | tee -a /home/vago/.bashrc
 
 sed -i 's/HISTSIZE=1000/HISTSIZE=10000/' /home/vago/.bashrc
@@ -30,6 +30,7 @@ sed -i 's/HISTSIZE=1000/HISTSIZE=10000/' /home/vago/.bashrc
 ####
 
 mkdir /home/vago/bin
+mkdir /home/vago/.icons
 
 ####
 
