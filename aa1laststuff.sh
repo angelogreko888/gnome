@@ -1,5 +1,13 @@
 #!/bin/bash
 
+handle_error() {
+      echo "An error occurred on line $1"
+      exit 1
+  }
+ 
+  trap 'handle_error $LINENO' ERR
+
+
 sed -i 's/GRUB_TIMEOUT=5/GRUB_TIMEOUT=1/' /etc/default/grub
 
 sudo update-grub

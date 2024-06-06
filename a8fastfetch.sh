@@ -1,5 +1,13 @@
 #!/bin/bash
 
+handle_error() {
+      echo "An error occurred on line $1"
+      exit 1
+  }
+ 
+  trap 'handle_error $LINENO' ERR
+
+
 mkdir -p /home/vago/git/fastfetch/
 
 cd /home/vago/git/fastfetch/

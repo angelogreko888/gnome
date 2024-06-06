@@ -1,5 +1,13 @@
 #!/bin/bash
 
+handle_error() {
+      echo "An error occurred on line $1"
+      exit 1
+  }
+ 
+  trap 'handle_error $LINENO' ERR
+
+
 sudo install -d -m 0755 /etc/apt/keyrings
 
 wget -q https://packages.mozilla.org/apt/repo-signing-key.gpg -O- | tee /etc/apt/keyrings/packages.mozilla.org.asc > /dev/null

@@ -1,6 +1,14 @@
 #!/bin/bash
 
-apps=" synaptic timeshift terminator gnome-disk-utility gnome-tweaks eog evince evince-common gnome-system-monitor gnome-text-editor gparted simple-scan btop ufw gufw gnome-software stacer pavucontrol libavcodec-extra wget hplip hplip-gui ripgrep eza file-roller git gnome-shell-extension-manager dconf-editor yaru-theme-gnome-shell yaru-theme-gtk nvidia-detect ncdu"
+handle_error() {
+      echo "An error occurred on line $1"
+      exit 1
+  }
+ 
+  trap 'handle_error $LINENO' ERR
+
+
+apps=" synaptic timeshift terminator gnome-disk-utility gnome-tweaks eog evince evince-common gnome-system-monitor gnome-text-editor gparted simple-scan btop ufw gufw gnome-software stacer pavucontrol libavcodec-extra wget hplip hplip-gui ripgrep exa file-roller git gnome-shell-extension-manager dconf-editor yaru-theme-gnome-shell yaru-theme-gtk ncdu"
 
 sudo apt install gnome-shell -y
 
