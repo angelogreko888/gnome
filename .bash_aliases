@@ -33,8 +33,8 @@ alias ss='sudo apt search'
 alias cp="cp -i "
 alias mv='mv -i'
 
-alias l='eza -lh'
-alias ll='eza -Alh'
+alias l='exa -lh'
+alias ll='exa -lha'
 
 alias sb="source ~/.bashrc"
 alias n.="nano ~/.bashrc "
@@ -46,6 +46,8 @@ alias ...='cd ../..'
 alias cc='cd ~/.config/'
 alias cdd='cd ~/Downloads/'
 alias cdb='cd /mnt/BackUp'
+alias cg='cd ~/git'
+alias cgg='cd ~/git/gnome'
 
 alias md='mkdir -pv'
 
@@ -55,4 +57,10 @@ alias spo='sudo systemctl poweroff'
 alias srb='sudo reboot'
 
 alias gc='git clone'
+alias gp='git push -u origin main'
+alias gs='git status'
+alias gss='git commit -m "save"'
+
 alias ap='apropos'
+alias b='btop'
+alias nu='ncdu'
