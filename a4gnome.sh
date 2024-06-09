@@ -8,7 +8,7 @@ handle_error() {
   trap 'handle_error $LINENO' ERR
 
 
-apps=" synaptic timeshift terminator gnome-disk-utility gnome-tweaks eog evince evince-common gnome-system-monitor gnome-text-editor gparted simple-scan btop ufw gufw gnome-software stacer pavucontrol libavcodec-extra wget hplip hplip-gui ripgrep exa file-roller git gnome-shell-extension-manager dconf-editor yaru-theme-gnome-shell yaru-theme-gtk ncdu"
+apps=" synaptic timeshift terminator gnome-disk-utility gnome-tweaks eog evince evince-common gnome-system-monitor gnome-text-editor gparted simple-scan btop ufw gufw gnome-software stacer pavucontrol libavcodec-extra wget hplip hplip-gui ripgrep exa file-roller git gnome-shell-extension-manager dconf-editor yaru-theme-gtk ncdu locate default-jre default-jdk android-tools-adb android-tools-fastboot "
 
 sudo apt install gnome-shell -y
 
@@ -23,3 +23,4 @@ sudo apt --fix-broken install -y
 sudo apt purge yelp yelp-tools -y
 
 sudo apt autoremove -y
+

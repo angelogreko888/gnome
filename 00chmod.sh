@@ -8,4 +8,4 @@ handle_error() {
   trap 'handle_error $LINENO' ERR
 
 
-sudo chown vago: ~/git/gnome/*
+sudo chown -R vago: /home/vago/git/gnome/*

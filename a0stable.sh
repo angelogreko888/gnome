@@ -24,4 +24,10 @@ sudo bash ./a7privacy.sh
 
 sudo bash ./a8fastfetch.sh
 
-sudo bash ./aa1laststuff.sh
+sudo bash ./a9freetube.sh
+
+sudo bash ./aa1libreoffice.sh
+
+sudo bash ./aa2anydesk.sh
+
+sudo bash ./aaa1laststuff.sh
