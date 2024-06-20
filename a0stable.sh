@@ -30,4 +30,6 @@ sudo bash ./aa1libreoffice.sh
 
 sudo bash ./aa2anydesk.sh
 
+sudo bash ./aa3virtualbox.sh 
+
 sudo bash ./aaa1laststuff.sh

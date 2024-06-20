@@ -48,6 +48,9 @@ alias cdd='cd ~/Downloads/'
 alias cdb='cd /mnt/BackUp'
 alias cg='cd ~/git/'
 alias cgg='cd ~/git/gnome/'
+alias ci='cd ~/.config/i3/'
+alias cii='cd ~/.config/i3blocks/'
+
 
 alias md='mkdir -pv'
 
@@ -55,6 +58,7 @@ alias ctl="sudo systemctl "
 alias open='xdg-open'
 alias spo='sudo systemctl poweroff'
 alias srb='sudo reboot'
+alias si='sudo update-initramfs -u'
 
 alias gc='git clone'
 alias gp='git push -u origin main'
@@ -68,3 +72,12 @@ alias lu='sudo updatedb'
 alias ap='apropos'
 alias b='btop'
 alias nu='ncdu'
+
+
+alias tc='sudo timeshift --create'
+alias tr='sudo timeshift --restore'
+alias tl='sudo timeshift --list'
+
+alias syn='sudo -i synaptic'
+alias gu='sudo -i gufw'
+alias st='sudo -i stacer'

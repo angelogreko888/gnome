@@ -43,10 +43,12 @@ mkdir /home/vago/.icons
 ####
 
 cp /home/vago/git/gnome/.bash_aliases /home/vago/
+cp /home/vago/git/gnome/.gitconfig /home/vago/
 
 ####
 
 cp -r /home/vago/git/gnome/buuf-nestort /home/vago/.icons/
-cp -r /home/vago/git/gnome/radioactive-new /home/vago/.icons/
+cp -r /home/vago/git/gnome/radioactive-yellow /home/vago/.icons/
+cp -r /home/vago/git/gnome/background /home/vago/.config/
 
 sudo updatedb
