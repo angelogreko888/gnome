@@ -10,7 +10,7 @@ handle_error() {
 
 sudo bash ./a1zram.sh
 
-sudo bash ./a2firmware.sh
+#sudo bash ./a2firmware.sh
 
 sudo bash ./a3up.sh
 

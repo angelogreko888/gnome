@@ -28,33 +28,6 @@ command=~/.config/i3blocks/modules/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
-# Volume indicator
-#
-# The first parameter sets the step (and units to display)
-# The second parameter overrides the mixer selection
-# See the script for details.
-[volume]
-label=VOL
-#label=♪
-instance=Master
-#instance=PCM
-interval=once
-signal=10
-
-# Memory usage
-#
-# The type defaults to "mem" if the instance is not specified.
-[memory]
-label=MEM
-separator=true
-interval=1
-
-#[memory]
-#label=SWAP
-#instance=swap
-#separator=false
-#interval=30
-
 # Disk usage
 #
 # The directory defaults to $HOME if the instance is not specified.
@@ -75,37 +48,50 @@ interval=1
 #interval=10
 #separator=false
 
-#[wifi]
-#instance=wlp3s0
-#interval=10
-#separator=false
+[bandwidth]
+instance=enp6s0
+label=
+interval=1
+color=#FAAA04
 
-#[bandwidth]
+[wifi]
+instance=wlp3s0
+label=
+interval=10
+separator=true
+
+
+[bandwidth]
 #instance=eth0
-#interval=5
+label=
+interval=1
+color=#FAAA04
 
 # CPU usage
-#
+
 # The script may be called with -w and -c switches to specify thresholds,
 # see the script for details.
+
 [cpu_usage]
-label=CPU
+label=
 interval=1
-min_width=CPU: 100.00%
+#min_width=CPU: 100.00%
 separator=true
+color=#72FA04
 
 [load_average]
 interval=5
+label=Δ
+color=#04FAD5
 
-# Battery indicator
+# Memory usage
 #
-# The battery instance defaults to 0.
-[battery]
-label=BAT
-#label=⚡
-instance=0
-interval=30
-
+# The type defaults to "mem" if the instance is not specified.
+[memory]
+label=
+separator=true
+interval=1
+color=#FA4B04
 
 # Temperature
 #
@@ -113,15 +99,39 @@ interval=30
 # The script may be called with -w and -c switches to specify thresholds,
 # see the script for details.
 [temperature]
-label=TEMP
 interval=5
+label=🌡
+
+# Volume indicator
+#
+# The first parameter sets the step (and units to display)
+# The second parameter overrides the mixer selection
+# See the script for details.
+[volume]
+#label=VOL
+label=♪
+instance=Master
+#instance=PCM
+interval=1
+signal=10
+color=#00FF00
+
+
+# Battery indicator
+#
+# The battery instance defaults to 0.
+[battery]
+#label=BAT
+label=⚡
+instance=0
+interval=30
 
 
 # Date Time
 #
 [time]
 command=date +'%a %b %d  %-I:%M %p'
-interval=5
+interval=1
 
 # Generic media player support
 #

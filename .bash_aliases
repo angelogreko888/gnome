@@ -35,6 +35,7 @@ alias cp="cp -i "
 alias mv='mv -i'
 
 alias l='exa -lha'
+alias lk='lsblk'
 
 alias sb="source ~/.bashrc"
 alias n.="nano ~/.bashrc "
@@ -81,3 +82,7 @@ alias tl='sudo timeshift --list'
 alias syn='sudo -i synaptic'
 alias gu='sudo -i gufw'
 alias st='sudo -i stacer'
+
+alias ch='sudo chmod +x '
+alias co='sudo chown vago: '
+alias dk='sudo dpkg -i '

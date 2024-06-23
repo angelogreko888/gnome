@@ -8,7 +8,7 @@
    trap 'handle_error $LINENO' ERR
 
 
- apps=" synaptic timeshift terminator gnome-disk-utility eog evince evince-common gnome-text-editor gparted simple-scan btop ufw gufw stacer pavucontrol libavcodec-extra wget hplip hplip-gui ripgrep exa file-roller git dconf-editor ncdu locate default-jre default-jdk android-tools-adb android-tools-fastboot curl fonts-cantarell thunar cups kdeconnect redshift gxkb gnome-screenshot"
+ apps=" synaptic timeshift terminator gnome-disk-utility eog gnupg evince evince-common gnome-text-editor gparted simple-scan btop ufw gufw stacer pavucontrol libavcodec-extra wget hplip hplip-gui ripgrep exa file-roller git dconf-editor ncdu locate default-jre default-jdk android-tools-adb android-tools-fastboot curl fonts-cantarell thunar cups kdeconnect redshift  gnome-screenshot"
 
  xdg-user-dirs-update
 
