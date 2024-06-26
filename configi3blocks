@@ -48,11 +48,11 @@ markup=none
 #interval=10
 #separator=false
 
-[bandwidth]
-instance=enp6s0
-label=
-interval=1
-color=#FAAA04
+#[bandwidth]
+#instance=enp6s0
+#label=
+#interval=1
+#color=#FAAA04
 
 [wifi]
 instance=wlp3s0
@@ -61,28 +61,29 @@ interval=10
 separator=true
 
 
-[bandwidth]
+#[bandwidth]
 #instance=eth0
-label=
-interval=1
-color=#FAAA04
+#label=
+#interval=1
+#color=#FAAA04
 
 # CPU usage
 
 # The script may be called with -w and -c switches to specify thresholds,
 # see the script for details.
 
-[cpu_usage]
-label=
-interval=1
-#min_width=CPU: 100.00%
-separator=true
-color=#72FA04
-
 [load_average]
 interval=5
 label=Δ
 color=#04FAD5
+
+[cpu_usage]
+label=
+interval=1
+min_width=CPU: 10%
+separator=true
+color=#72FA04
+
 
 # Memory usage
 #
@@ -92,6 +93,8 @@ label=
 separator=true
 interval=1
 color=#FA4B04
+min_width=MEM: 10
+
 
 # Temperature
 #
@@ -99,7 +102,7 @@ color=#FA4B04
 # The script may be called with -w and -c switches to specify thresholds,
 # see the script for details.
 [temperature]
-interval=5
+interval=3
 label=🌡
 
 # Volume indicator

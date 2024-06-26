@@ -13,9 +13,10 @@ mkdir -p /home/vago/.config/i3blocks/modules/
 sudo cp /usr/share/i3blocks/* /home/vago/.config/i3blocks/modules/
 cp /home/vago/git/gnome/configi3blocks /home/vago/.config/i3blocks/config
 cp /home/vago/git/gnome/configi3 /home/vago/.config/i3/config
-cp /home/vago/git/gnome/.gtkrc-2.0.mine /home/vago/
+#cp /home/vago/git/gnome/.gtkrc-2.0.mine /home/vago/
 cp /home/vago/git/gnome/.nanorc /home/vago/
 cp /home/vago/git/gnome/gxkb.cfg /home/vago/.config/gxkb/
+cp -r /home/vago/git/gnome/.fonts /home/vago/
 
 
 sed -i 's/GRUB_TIMEOUT=5/GRUB_TIMEOUT=1/' /etc/default/grub

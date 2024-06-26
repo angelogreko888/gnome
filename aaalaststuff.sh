@@ -50,5 +50,6 @@ cp /home/vago/git/gnome/.gitconfig /home/vago/
 cp -r /home/vago/git/gnome/buuf-nestort /home/vago/.icons/
 cp -r /home/vago/git/gnome/radioactive-yellow /home/vago/.icons/
 cp -r /home/vago/git/gnome/background /home/vago/.config/
+cp -r /home/vago/git/gnome/.fonts /home/vago/
 
 sudo updatedb
