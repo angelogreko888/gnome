@@ -10,6 +10,7 @@ handle_error() {
 
 cd /home/vago/git/
 
+
 git clone https://github.com/simeononsecurity/FireFox-Privacy-Script
 
 cp /home/vago/git/FireFox-Privacy-Script/Files/distribution/policies.json /home/vago/git/FireFox-Privacy-Script/Files/distribution/policiescopy.json

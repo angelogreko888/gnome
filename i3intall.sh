@@ -8,4 +8,4 @@ handle_error() {
      trap 'handle_error $LINENO' ERR
 
 
-sudo apt install i3 i3blocks lightdm x11-xserver-utils nm-tray pulseaudio gnupg feh rofi lightdm-gtk-greeter lxappearance arandr arc-theme gxkb redshift xautolock
+sudo apt install i3 i3blocks lightdm x11-xserver-utils nm-tray pulseaudio gnupg feh rofi lightdm-gtk-greeter lxappearance arandr arc-theme gxkb redshift xautolock numlockx xinput

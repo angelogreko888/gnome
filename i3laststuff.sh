@@ -17,13 +17,13 @@ cp /home/vago/git/gnome/configi3 /home/vago/.config/i3/config
 cp /home/vago/git/gnome/.nanorc /home/vago/
 cp /home/vago/git/gnome/gxkb.cfg /home/vago/.config/gxkb/
 cp -r /home/vago/git/gnome/.fonts /home/vago/
-
+sudo cp /home/vago/git/gnome/pic/il.png /usr/share/gxkb/flags/
 
 sed -i 's/GRUB_TIMEOUT=5/GRUB_TIMEOUT=1/' /etc/default/grub
 sudo update-grub
 
 echo "
- PS1='\[\033[1;36m\]\u\[\033[1;31m\]@\[\033[1;32m\]\h: \[\033[1;36m\]\w\[\033[1;33>
+PS1='\[\033[1;36m\]\u\[\033[1;31m\]@\[\033[1;32m\]\h: \[\033[1;36m\]\w\[\033[1;33m\] $\[\033[0m\] '
  " | tee -a /home/vago/.bashrc
 
 sed -i 's/HISTSIZE=1000/HISTSIZE=10000/' /home/vago/.bashrc
@@ -34,9 +34,9 @@ mkdir /home/vago/.icons
 cp /home/vago/git/gnome/.bash_aliases /home/vago/
 cp /home/vago/git/gnome/.gitconfig /home/vago/
 
-cp -r /home/vago/git/gnome/buuf-nestort /home/vago/.icons/
+sudo cp -r /home/vago/git/gnome/buuf-nestort /usr/share/icons/
+sudo cp -r /home/vago/git/gnome/radioactive-yellow /usr/share/icons/
 cp -r /home/vago/git/gnome/backgrounds /home/vago/.config/
-
 
 sudo mv /etc/xdg/autostart/org.kde.kdeconnect.daemon.desktop org.kde.kdeconnect.daemon.desktop.nonactive
 sudo mv /etc/xdg/autostart/xdg-user-dirs-kde.desktop xdg-user-dirs-kde.desktop.nonactive
