@@ -1,24 +1,6 @@
 # i3blocks config file
 #
-# Please see man i3blocks for a complete reference!
 # The man page is also hosted at http://vivien.github.io/i3blocks
-#
-# List of valid properties:
-#
-# align
-# color
-# command
-# full_text
-# instance
-# interval
-# label
-# min_width
-# name
-# separator
-# separator_block_width
-# short_text
-# signal
-# urgent
 
 # Global properties
 #
@@ -43,19 +25,19 @@ markup=none
 # If the instance is not specified, use the interface used for default route.
 # The address can be forced to IPv4 or IPv6 with -4 or -6 switches.
 #[iface]
-#instance=wlan0
+#instance=enp8s0
 #color=#00FF00
 #interval=10
 #separator=false
 
 #[bandwidth]
-#instance=enp6s0
+#instance=enp8s0
 #label=
 #interval=1
 #color=#FAAA04
 
 [wifi]
-instance=wlp3s0
+instance=wlp7s0
 label=
 interval=10
 separator=true
@@ -72,21 +54,20 @@ separator=true
 # The script may be called with -w and -c switches to specify thresholds,
 # see the script for details.
 
-[load_average]
-interval=5
-label=Δ
-color=#04FAD5
+#[load_average]
+#interval=5
+#label=Δ
+#color=#04FAD5
 
 [cpu_usage]
 label=
 interval=1
 min_width=CPU: 10%
 separator=true
-color=#72FA04
-
+#color=#72FA04
+color=#04FAD5
 
 # Memory usage
-#
 # The type defaults to "mem" if the instance is not specified.
 [memory]
 label=
@@ -106,7 +87,6 @@ interval=3
 label=🌡
 
 # Volume indicator
-#
 # The first parameter sets the step (and units to display)
 # The second parameter overrides the mixer selection
 # See the script for details.
@@ -119,6 +99,19 @@ interval=1
 signal=10
 color=#00FF00
 
+# Date Time
+#
+[time]
+command=date +'%a %b %d  %-I:%M %p'
+interval=1
+
+#Language indicator
+[language]
+#label=LNG
+command=xkblayout-state print %s | awk '{print toupper($0)}'
+interval=1
+signal=1
+color=#FF0000
 
 # Battery indicator
 #
@@ -127,14 +120,9 @@ color=#00FF00
 #label=BAT
 label=⚡
 instance=0
-interval=30
+interval=120
 
 
-# Date Time
-#
-[time]
-command=date +'%a %b %d  %-I:%M %p'
-interval=1
 
 # Generic media player support
 #

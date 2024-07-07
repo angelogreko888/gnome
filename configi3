@@ -13,10 +13,8 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango: Cantarell 14
+font pango: Cantarell 15 
 
-# This font is widely installed, provides lots of unicode glyphs, right-to-left
-# text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
 
 # Start XDG autostart .desktop files using dex. See also
@@ -104,7 +102,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-#bindsym $mod+space focus mode_toggle
+bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -188,8 +186,8 @@ bindsym $mod+r mode "resize"
 bar {
 #        status_command i3status
 	status_command i3blocks -c ~/.config/i3blocks/config
-	workspace_buttons yes
-	font pango: Cantarell 14
+#	tray_output primary 
+        workspace_buttons yes
 
 }	
 
@@ -204,7 +202,7 @@ client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 client.background       #ffffff
 
 
-exec xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
+exec xinput set-prop "SYNA2B46:00 06CB:CD5F Touchpad" "libinput Tapping Enabled" 1
 
 #---- Wallpaper display ----#
  exec_always feh --bg-fill ~/.config/backgrounds/parthenon.jpg
@@ -230,27 +228,30 @@ for_window [class="FreeTube"] move to workspace $ws2
 
 for_window [class="Terminator"] move to workspace $ws1
 
+for_window [class="mpv"] move to workspace $ws6
 
-bindsym $mod+Print exec gnome-screenshot -i
-bindsym Print exec gnome-screenshot -a
-
-
-
- #---- Keyboard layout ----
- # Keyboard layout
- #exec "setxkbmap -layout us,gr -option 'grp:ctrl_alt_toggle'"
-# exec "setxkbmap 'us,gr,he' -option 'grp:$mod_space_toggle'"
-#exec_always "setxkbmap -layout us,gr,il -option 'grp:alt_space_toggle'" 
-#exec_always --no-startup-id gxkb 
-exec gxkb
-#-------------------------------#
+# screeshots
+bindsym Print exec flameshot gui
+bindsym $mod+Print exec flameshot full
 
 
+ # Keyboard 
+exec --no-startup-id "setxkbmap -model pc105 -layout us,gr,il -option grp:alt_space_toggle"
+exec numlock on
+
+
+# redshift
 bindsym $mod+z exec redshift -P -O 2500
 bindsym $mod+x exec redshift -x
 
+# arandr
+exec_always --no-startup-id ~/.screenlayout/autoxrandr.sh
+
+
+#log operations
 bindsym $mod+Control+s exec --no-startup-id systemctl suspend
 bindsym $mod+Control+p exec --no-startup-id systemctl poweroff
 bindsym $mod+Control+r exec --no-startup-id systemctl reboot
 exec --no-startup-id xautolock -time 15 -locker "systemctl suspend"
 
+exec terminator
