@@ -51,7 +51,7 @@ alias cg='cd ~/git/'
 alias cgg='cd ~/git/gnome/'
 alias ci='cd ~/.config/i3/'
 alias cii='cd ~/.config/i3blocks/'
-
+alias cmd='cd /mnt/mydata/'
 
 alias md='mkdir -pv'
 
@@ -78,11 +78,17 @@ alias nu='ncdu'
 alias tc='sudo timeshift --create'
 alias tr='sudo timeshift --restore'
 alias tl='sudo timeshift --list'
+alias ts='sudo timeshift-gtk'
 
 alias syn='sudo -i synaptic'
 alias gu='sudo -i gufw'
 alias st='sudo -i stacer'
+alias gd='sudo gnome-disks'
+alias gpt='sudo gparted'
 
 alias ch='sudo chmod +x '
 alias co='sudo chown vago: '
 alias dk='sudo dpkg -i '
+
+alias ni='nano ~/.config/i3/config'
+alias nib='nano ~/.config/i3blocks/config' 
