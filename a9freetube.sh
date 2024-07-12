@@ -11,8 +11,8 @@ mkdir -p /home/vago/git/freetube
 
 cd /home/vago/git/freetube/
 
-wget https://github.com/FreeTubeApp/FreeTube/releases/download/v0.21.0-beta/freetube_0.21.0_amd64.deb
+wget https://github.com/FreeTubeApp/FreeTube/releases/download/v0.21.1-beta/freetube_0.21.1_amd64.deb
 
-sudo dpkg -i freetube_0.21.0_amd64.deb
+sudo dpkg -i *.deb
 
 
